@@ -2,9 +2,8 @@
 #include <vector>
 #include <numeric>
 
-int vector_compute(double n1, double n2, double n3, double n4)
+int vector_compute(std::vector<double> compute_numbers)
 {
-    std::vector<double> compute_numbers = {n1, n2, n3, n4};
     double sum_numbers = std::accumulate(compute_numbers.begin(), compute_numbers.end(), 0);
     double result = sum_numbers / compute_numbers.size();
     std::cout << "The average of your input is: " << result << std::endl;
@@ -13,5 +12,7 @@ int vector_compute(double n1, double n2, double n3, double n4)
 }
 int main()
 {
-    vector_compute(8, 2, 3, 4);
+    std::vector<double> compute_numbers = {4.3, 5.2, 6, 9, 12, 3};
+    vector_compute(compute_numbers);
+    return 0;
 }
