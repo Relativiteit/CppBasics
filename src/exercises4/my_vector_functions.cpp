@@ -10,12 +10,23 @@ void add_zeros_to_list(vector<int> &number_list, int zeros_number)
     cout << "B Size of numbers list:" << number_list.size() << endl;
 }
 
-vector<int> add_elements(const vector<int> &list_a, vector<int> list_b)
+vector<int> add_elements(const vector<int> &list_a, vector<int> &list_b)
 {
     for (int number : list_a)
     {
         list_b.push_back(number);
     }
-    cout << "The numbers have been added to the list" << endl;
-    return list_b;
+}
+
+int get_string_occurences_in_list(const vector<string> &list, string text)
+{
+    int occurences = 0;
+    for (string s : list)
+    {
+        if (s == text)
+        {
+            occurences++;
+        }
+    }
+    return occurences;
 }

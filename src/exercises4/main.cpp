@@ -26,5 +26,10 @@ int main()
         cout << result[i];
     }
 
+    vector<string> city_list = {"Rotterdam",
+                                "Tokyo",
+                                "Kingston",
+                                "Morioka"};
+    cout << "number of occrences of Rotterdam" << get_string_occurences_in_list(city_list, "Rotterdam");
     return 0;
 }
