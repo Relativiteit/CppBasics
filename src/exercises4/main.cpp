@@ -1,16 +1,10 @@
 #include <iostream>
 #include <vector>
+#include "my_vector_functions.hpp"
 
 using namespace std;
 
-void add_zeros_to_list(vector<int> &number_list, int zeros_number)
-{
-    for (int i = 0; i < zeros_number; i++)
-    {
-        number_list.push_back(0);
-    }
-    cout << "B Size of numbers list:" << number_list.size() << endl;
-}
+// 4.1. Put the 2 existing functions from this section in a different file
 
 int main()
 {
